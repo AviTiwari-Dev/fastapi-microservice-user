@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+greenlet
+sqlalchemy
+asyncpg
+pydantic-settings
+email-validator
