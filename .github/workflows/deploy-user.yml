@@ -42,7 +42,7 @@ jobs:
 
       - name: Deploy Cloud Run
         run: |
-          gcloud run deploy user-management-service \
+          gcloud run deploy user-service \
             --image asia-south1-docker.pkg.dev/spring-asset-495404-t0/user-repo/user-image:${{ github.sha }} \
             --region asia-south1 \
             --platform managed \
