@@ -38,16 +38,16 @@ jobs:
       - name: Build Image
         run: |
           gcloud builds submit services/user \
-            --tag asia-south1-docker.pkg.dev/spring-asset-495404-t0/user-repo/user-image:${{ github.sha }}
+            --tag asia-south1-docker.pkg.dev/vibrant-circlet-496512-e4/user-repo/user-image:${{ github.sha }}
 
       - name: Deploy Cloud Run
         run: |
           gcloud run deploy user-service \
-            --image asia-south1-docker.pkg.dev/spring-asset-495404-t0/user-repo/user-image:${{ github.sha }} \
+            --image asia-south1-docker.pkg.dev/vibrant-circlet-496512-e4/user-repo/user-image:${{ github.sha }} \
             --region asia-south1 \
             --platform managed \
             --allow-unauthenticated \
-            --add-cloudsql-instances spring-asset-495404-t0:asia-south1:user-instanse \
+            --add-cloudsql-instances vibrant-circlet-496512-e4:asia-south1:user-instance \
             --set-env-vars URL="${{ secrets.URL }}" \
             --set-env-vars ECHO="${{ secrets.ECHO }}" \
             --set-env-vars POOL_SIZE="${{ secrets.POOL_SIZE }}" \
