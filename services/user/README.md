@@ -101,7 +101,3 @@ The following image files are stored in `services/user/docs/`:
 cd services/user
 pytest
 ```
-
-## Notes
-
-The application creates its database schema on startup by calling `UserBase.metadata.create_all` inside the lifecycle manager.
