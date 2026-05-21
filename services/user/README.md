@@ -79,18 +79,18 @@ docker run --env-file .env -p 8080:8080 project024-user
 
 The following image files are stored in `services/user/docs/`:
 
-- `swagger_ui.png`
-- `gcp_cloud_run_container.png`
-- `gcp_cloud_sql_postgresql.png`
-- `gcp_cloud_artifact_repository.png`
-- `gcp_cloud_artifact_image.png`
 
+- `swagger_ui.png`
 ![Swagger UI](docs/swagger_ui.png)
 
+- `gcp_cloud_run_container.png`
 ![GCP Cloud Run Container](docs/gcp_cloud_run_container.png)
 
+- `gcp_cloud_sql_postgresql.png`
 ![GCP Cloud SQL PostgreSQL](docs/gcp_cloud_sql_postgresql.png)
 
+- `gcp_cloud_artifact_repository.png`
 ![GCP Artifact Repository](docs/gcp_cloud_artifact_repository.png)
 
+- `gcp_cloud_artifact_image.png`
 ![GCP Artifact Image](docs/gcp_cloud_artifact_image.png)
