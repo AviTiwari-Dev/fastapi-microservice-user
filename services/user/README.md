@@ -94,10 +94,3 @@ The following image files are stored in `services/user/docs/`:
 ![GCP Artifact Repository](docs/gcp_cloud_artifact_repository.png)
 
 ![GCP Artifact Image](docs/gcp_cloud_artifact_image.png)
-
-## Testing
-
-```bash
-cd services/user
-pytest
-```
